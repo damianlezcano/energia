@@ -20,8 +20,8 @@
       <configuration>
         <httpConfiguration>
           <all>
-            <connectionTimeout>1100</connectionTimeout>
-            <readTimeout>1100</readTimeout>
+            <connectionTimeout>10000</connectionTimeout>
+            <readTimeout>120000</readTimeout>
           </all>
         </httpConfiguration>
       </configuration>
