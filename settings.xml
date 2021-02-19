@@ -15,6 +15,8 @@
   <servers>
     <server>
       <id>edenor.nexus</id>
+      <username>admin</username>
+      <password>admin123</password>
       <configuration>
         <httpConfiguration>
           <all>
