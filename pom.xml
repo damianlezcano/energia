@@ -9,47 +9,50 @@
   <name>energia</name>
   <description></description>
 
+  <properties>
+    <!--rhpam.version>7.39.0.Final-redhat-00007</rhpam.version-->
+    <rhpam.version>7.39.0.Final</rhpam.version>
+  </properties>
+
   <distributionManagement>
 
     <repository>
-      <id>smg.nexus</id>
+      <id>edenor.nexus</id>
       <name>Release Repository</name>
       <url>http://insecure-nexus-nexus.noprod-apps.pro.edenor/nexus/content/repositories/brms-snapshots</url>
       <layout>default</layout>
     </repository>
-<!--
     <snapshotRepository>
-      <id>smg.nexus</id>
+      <id>edenor.nexus</id>
       <name>Snapshot Repository</name>
-      <url>http://insecure-nexus-nexus.noprod-apps.pro.edenor/nexus/content/repositories/snapshots</url>
+      <url>http://insecure-nexus-nexus.noprod-apps.pro.edenor/nexus/content/repositories/brms-snapshots</url>
       <layout>default</layout>
     </snapshotRepository>
--->
   </distributionManagement>
 
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-api</artifactId>
-      <version>7.39.0.Final-redhat-00007</version>
+      <version>${rhpam.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-internal</artifactId>
-      <version>7.39.0.Final-redhat-00007</version>
+      <version>${rhpam.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-core</artifactId>
-      <version>7.39.0.Final-redhat-00007</version>
+      <version>${rhpam.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-persistence-jaxb</artifactId>
-      <version>7.39.0.Final-redhat-00007</version>
+      <version>${rhpam.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -61,7 +64,8 @@
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
       <artifactId>xstream</artifactId>
-      <version>1.4.11.1-redhat-00001</version>
+      <!--version>1.4.11.1-redhat-00001</version-->
+      <version>1.4.11.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -76,7 +80,7 @@
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
-        <version>7.39.0.Final-redhat-00007</version>
+        <version>${rhpam.version}</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
