@@ -14,7 +14,7 @@
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
   <servers>
     <server>
-      <id>edenor-nexus</id>
+      <id>edenor.nexus</id>
       <configuration>
         <httpConfiguration>
           <all>
@@ -30,7 +30,7 @@
       <id>edenor.repos</id>
       <repositories>
         <repository>
-          <id>edenor-nexus</id>
+          <id>edenor.nexus</id>
           <url>http://insecure-nexus-nexus.noprod-apps.pro.edenor/nexus/content/groups/redhat/</url>
           <releases>
             <enabled>true</enabled>
@@ -43,7 +43,7 @@
       </repositories>
       <pluginRepositories>
         <pluginRepository>
-          <id>edenor-nexus</id>
+          <id>edenor.nexus</id>
           <url>http://insecure-nexus-nexus.noprod-apps.pro.edenor/nexus/content/groups/redhat/</url>
           <releases>
             <enabled>true</enabled>
