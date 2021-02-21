@@ -13,13 +13,37 @@
     <!--rhpam.version>7.39.0.Final-redhat-00007</rhpam.version-->
     <rhpam.version>7.39.0.Final</rhpam.version>
   </properties>
-
+<!--
+  <profiles>
+    <profile>
+      <id>snapshots</id>
+      <distributionManagement>
+        <repository>
+          <id>edenor.nexus</id>
+          <name>Release Repository</name>
+          <url>http://insecure-nexus-nexus.noprod-apps.pro.edenor/nexus/content/repositories/brms-snapshots</url>
+          <layout>default</layout>
+        </repository>
+      </distributionManagement>
+    </profile>
+    <profile>
+      <id>releases</id>
+      <distributionManagement>
+        <repository>
+          <id>edenor.nexus</id>
+          <name>Release Repository</name>
+          <url>http://insecure-nexus-nexus.noprod-apps.pro.edenor/nexus/content/repositories/brms-releases</url>
+          <layout>default</layout>
+        </repository>
+      </distributionManagement>
+    </profile>
+  </profiles>
+-->
   <distributionManagement>
-
     <repository>
       <id>edenor.nexus</id>
       <name>Release Repository</name>
-      <url>http://insecure-nexus-nexus.noprod-apps.pro.edenor/nexus/content/repositories/brms-snapshots</url>
+      <url>http://insecure-nexus-nexus.noprod-apps.pro.edenor/nexus/content/repositories/brms-releases</url>
       <layout>default</layout>
     </repository>
     <snapshotRepository>
